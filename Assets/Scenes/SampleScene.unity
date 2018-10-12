@@ -123,6 +123,8 @@ GameObject:
   - component: {fileID: 485680678}
   - component: {fileID: 485680677}
   - component: {fileID: 485680676}
+  - component: {fileID: 485680679}
+  - component: {fileID: 485680680}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -147,8 +149,11 @@ MonoBehaviour:
   shiprend: {fileID: 485680677}
   rightcolor: {r: 0, g: 0, b: 0.98039216, a: 1}
   leftcolor: {r: 0, g: 1, b: 0, a: 1}
+  spacecolor: {r: 0, g: 0, b: 0, a: 0}
+  red: 0
+  blue: 0
+  green: 0
   timer: 0
-  timerstart: 0
 --- !u!212 &485680677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -208,6 +213,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &485680679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 485680675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c8d0f7b083027b48809fc1c38828cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &485680680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 485680675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac15824794fc3445a2cd3b0d6faea00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSpawn: 0
+  ySpawn: 0
+  position: {x: 0, y: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
