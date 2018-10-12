@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 485680678}
   - component: {fileID: 485680677}
+  - component: {fileID: 485680681}
   - component: {fileID: 485680676}
   - component: {fileID: 485680679}
   - component: {fileID: 485680680}
@@ -143,8 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f0d3d6a61896b4d80f35423cb6bcc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationspeed: 111
-  shipforward: 3
+  rotationspeedright: 111
+  rotationspeedleft: 99
+  shipforward: 10
   shipbackward: 4
   shiprend: {fileID: 485680677}
   rightcolor: {r: 0, g: 0, b: 0.98039216, a: 1}
@@ -238,6 +240,29 @@ MonoBehaviour:
   xSpawn: 0
   ySpawn: 0
   position: {x: 0, y: 0}
+--- !u!114 &485680681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 485680675}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f0d3d6a61896b4d80f35423cb6bcc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationspeedright: 99
+  rotationspeedleft: 77
+  shipforward: 0
+  shipbackward: 0
+  shiprend: {fileID: 0}
+  rightcolor: {r: 0, g: 0, b: 0, a: 0}
+  leftcolor: {r: 0, g: 0, b: 0, a: 0}
+  spacecolor: {r: 0, g: 0, b: 0, a: 0}
+  red: 0
+  blue: 0
+  green: 0
+  timer: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

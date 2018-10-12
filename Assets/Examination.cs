@@ -5,7 +5,8 @@ using UnityEngine;
 public class Examination : MonoBehaviour
 {
 
-    public float rotationspeed; // variabel för skeppets sväng fart
+    public float rotationspeedright; // variabel för skeppets sväng fart höger man ändrar i unity
+    public float rotationspeedleft; // variable för skeppets sväng fart vänster man ändrar i unity
     public float shipforward; // variabel för skeppets fart frammåt
     public float shipbackward; // variabel för skeppets fart baklänges
     public SpriteRenderer shiprend; // sprite rend som gör så att skeppet ändrar för de är en sprite
@@ -31,14 +32,14 @@ public class Examination : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) // Om man trycker knappen A händer det under
         {
             shiprend.color = leftcolor; // skeppet ändras till vald färg som man ändrar i unity för den e public variabel
-            transform.Rotate(0f, 0f, rotationspeed * Time.deltaTime); // den åker vänster time deltatime gör så det är oberoende av frames per second
+            transform.Rotate(0f, 0f, rotationspeedleft * Time.deltaTime); // den åker vänster time deltatime gör så det är oberoende av frames per second
 
         }
         if (Input.GetKey(KeyCode.D)) // Om man håller ned knappen D Händer det under
         {
             shiprend.color = rightcolor; // skeppets ändras till vald färg för variablen i unity
-            transform.Rotate(0f, 0f, -rotationspeed * Time.deltaTime);  //  Den åker åt höger obereonde av frames per second
-            transform.Translate(-5f / 2 * Time.deltaTime, 0, 0, Space.Self); // den åker av halva den vanliga farten oberoende av frames per second
+            transform.Rotate(0f, 0f, -rotationspeedright * Time.deltaTime);  //  Den åker åt höger obereonde av frames per second
+             
         }
         if (Input.GetKeyDown(KeyCode.S)) // Om man håller ned knappen S händer det under
         {
